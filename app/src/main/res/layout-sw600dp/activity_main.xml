@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context="com.shamdroid.popularmovies.MainActivity">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainMoviesListFragment"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:name="com.shamdroid.popularmovies.MovieListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:context="com.shamdroid.popularmovies.MovieListFragment"
+        android:layout_weight="3">
+
+
+
+    </fragment>
+
+<FrameLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="6"
+    android:id="@+id/mainDetailsContainer"></FrameLayout>
+
+</LinearLayout>

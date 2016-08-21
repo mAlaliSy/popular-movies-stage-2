@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentMoviesList"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shamdroid.popularmovies.MovieListFragment">
+
+
+    <TextView
+        android:text="@string/noFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/txtMainNoFavorite"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainRecyclerView" />
+
+</FrameLayout>

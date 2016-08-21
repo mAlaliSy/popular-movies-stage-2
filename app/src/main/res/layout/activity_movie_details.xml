@@ -1,0 +1,10 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/detailsFragmentContainer"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shamdroid.popularmovies.MovieDetails"
+    tools:ignore="MergeRootFrame">
+
+
+</FrameLayout>

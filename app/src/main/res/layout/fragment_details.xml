@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shamdroid.popularmovies.DetailsFragment"
+    android:fillViewport="true"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtDetailsTitle"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/movie_title_padding"
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                tools:layout_editor_absoluteY="0dp"
+                android:layout_weight="1"/>
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tgleDetailFavorite"
+                android:textOff=""
+                android:textOn=""
+                android:background="@drawable/favorit_toggle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDetailsPoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/detailsPosterMargin"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtDetailsReleaseDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="bottom"
+                    android:padding="@dimen/small_text_padding"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/txtDetailsRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="50"
+                    android:gravity="top"
+                    android:padding="@dimen/small_text_padding"
+                    android:text="TextView" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/seperatorMargin"
+            android:layout_marginTop="@dimen/seperatorMargin"
+            android:background="@color/seperatorColor">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtDetailsOverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paragraphPadding"
+            android:text="TextView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/seperatorMargin"
+            android:layout_marginTop="@dimen/seperatorMargin"
+            android:background="@color/seperatorColor">
+
+        </LinearLayout>
+
+        <TextView
+            android:text="@string/trailers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:padding="@dimen/paragraphPadding" />
+
+        <TextView
+            android:text="@string/noInternetConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNoConnectionTrailers"
+            android:padding="@dimen/paragraphPadding"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvDetailsTrailers"
+            android:layout_weight="1" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/seperatorMargin"
+            android:layout_marginTop="@dimen/seperatorMargin"
+            android:background="@color/seperatorColor">
+
+        </LinearLayout>
+
+
+        <TextView
+            android:text="@string/reviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:padding="@dimen/paragraphPadding" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvDetailsReviews" >
+
+        </ListView>
+        <TextView
+            android:text="@string/noInternetConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtNoConnectionReviews"
+            android:padding="@dimen/paragraphPadding"
+            android:gravity="center"
+            android:visibility="gone" />
+        <TextView
+            android:text="@string/noReviews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDetailsNoReviews"
+            android:visibility="gone"
+            android:gravity="center"
+            android:padding="@dimen/noReviewsPadding"
+            android:textAlignment="center" />
+    </LinearLayout>
+</ScrollView>

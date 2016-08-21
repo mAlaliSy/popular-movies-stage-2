@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Popular Movies</string>
+
+    <string name="errorNoConnection">Connection Erro , Please make sure the device connected to the Internet !</string>
+
+    <string name="outOf10">/10</string>
+
+    <string name="ok">OK</string>
+
+    <string name="noConnectionFavoriteOnly">Your device is not connected , so only favorite movies will be shown .</string>
+
+    <string name="plesaseWait">Please Wait ..</string>
+
+    <string name="addedToFavorites">Movie added to favorites .</string>
+    <string name="removeFromFavorites">Movie removed from favorites .</string>
+
+
+    <string name="trailers">Trailers : </string>
+
+    <string name="trailer">Trailer </string>
+
+    <string name="chooseApplication">Choose Application </string>
+
+    <string name="reviews">Reviews : </string>
+
+    <string name="noReviews">No Reviews Available !</string>
+    <string name="favorite">Favorite</string>
+    <string name="sort_by_top_rated">Sort By Top Rated</string>
+    <string name="sort_by_most_popular">Sort By Most Popular</string>
+
+
+    <string name="noFavorite">No Favorite Movies ! </string>
+
+    <string name="noInternetConnection">No InternetConnection ! </string>
+
+</resources>
