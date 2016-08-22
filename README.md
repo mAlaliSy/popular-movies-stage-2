@@ -26,6 +26,11 @@ Please don't forget to change the API Key in
 Volley Library for transmitting data over the Internet.
 Content Providers with SQLite database to store favorite movies data.
 
+
+##Contact Us 
+ If you have any questions or suggestions feel free to email us on [m.alali.sy@gmail.com](mailto:m.alali.sy@gmail.com)
+
+
 # Licence
 ```
 The MIT Licence
