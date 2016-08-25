@@ -29,7 +29,7 @@ Content Providers with SQLite database to store favorite movies data.
 
 ##Contact Us 
  If you have any questions or suggestions feel free to email us on [m.alali.sy@gmail.com](mailto:m.alali.sy@gmail.com)
-
+ 
 
 # Licence
 ```
